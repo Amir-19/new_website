@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Learning Agent State Online With Recurrent Generate-and-Test"
+date:   2021-12-27 22:21:59 +00:00
+image: /images/recgentest.jpg
+categories: publication
+author: "Amir Samani"
+authors: "<strong>Amir Samani</strong>, Richard S. Sutton"
+venue: "pre-print"
+arxiv: /pdfs/Rec_Generate_and_Test.pdf
+code: https://github.com/Amir-19/prediction-pillar
+---
+We propose two methods for learning the agent state online based on the generate-and-test approach.
+We study the proposed methods on two online multi-step prediction problems. The first problem, trace conditioning, focuses on the
+agent’s ability to remember a cue for a prediction multiple steps into the future.
+In the second problem, trace patterning, the agent needs to learn patterns in the
+observation signals and remember them for future predictions. We show that our
+proposed methods can effectively learn the agent state online and produce accurate
+predictions.
+

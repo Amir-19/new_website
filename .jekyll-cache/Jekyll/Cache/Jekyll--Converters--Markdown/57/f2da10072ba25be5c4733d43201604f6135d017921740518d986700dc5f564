@@ -1,0 +1,3 @@
+I"e<p>The notion of state is fundamental to a reinforcement learning agent. The state is the input to the agent’s action-selection policy, value functions, and
+environmental model. The interaction between the reinforcement learning agent and the environment results in the agent’s data stream of experience—the alternating sequence of actions performed by the agent and observations provided by the environment. In this short abstract, we discuss the importance of learning the agent state online with computational and memory complexity similar to standard RL algorithms such as semi-gradient TD methods.</p>
+:ET

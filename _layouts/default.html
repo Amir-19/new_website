@@ -29,6 +29,9 @@
               </h1>
               <p>I am a graduate student at the <a href="http://rlai.ualberta.ca/">RLAI lab</a>, where I work on online representation learning for reinforcement learning. My advisor is <a href="http://incompleteideas.net/">Richard Sutton</a>.
               </p>
+              <p>
+                I am interested in reinforcement learning and sequential decision-making. More specifically, I study artificial agents interacting with their environment and continually improving their representations and models of the environment.
+              </p>
 <!--               <p>
                 From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>. I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016.
               </p>
@@ -53,7 +56,6 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm interested in reinforcement learning and online representation learning.
               </p>
             </td>
           </tr>
@@ -70,59 +72,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-<!--         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
+              <em>{{post.type}} {{post.course}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
 
@@ -165,14 +115,69 @@
           {% endfor %}
           {% endfor %}
         </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Publications</h2>
+              <p>
+
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'publication' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">paper</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
         <br>
+        <br>
+        <br>
+
+<!--        <br>
         <br>
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
+              <p> These include coursework, side projects and unpublished research work.
               </p>
             </td>
           </tr>

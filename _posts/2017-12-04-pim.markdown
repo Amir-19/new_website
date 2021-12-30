@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "MaxStream: SDN-based Flow Maximization for Video Streaming with QoS Enhancement"
+date:   2018-12-27 22:21:59 +00:00
+image: /images/network.jpg
+categories: publication
+author: "Amir Samani"
+authors: "<strong>Amir Samani</strong>, Mea Wang"
+venue: "2018 IEEE 43rd Conference on Local Computer Networks (LCN)"
+arxiv: https://ieeexplore.ieee.org/abstract/document/8638033
+---
+Along with the increasing demand for video streaming, network service providers and video content providers are challenged to maximize their service in terms of both quantity and quality while guaranteeing Quality-of-Service (QoS). In this paper, we propose MaxStream, a SDN-based flow maximization framework. The framework exploits the global view of the network available at the SDN controller to formulate integer multi-commodity flow problems with objectives to maximize the number of streaming sessions accommodated in a network to improve providers revenue (quantity of the service) and to maximize bandwidth provisioning for QoS enhancement (quality of the service). Our simulation results confirm that on average, MaxStream accepts 13% more streaming sessions and offers 50% increase in bandwidth provisioning compared to variations of the widest-shortest path algorithm.
