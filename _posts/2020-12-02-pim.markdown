@@ -7,7 +7,7 @@ categories: publication
 author: "Amir Samani"
 authors: "<strong>Amir Samani</strong>, Richard S. Sutton"
 venue: "pre-print"
-arxiv: /pdfs/Rec_Generate_and_Test.pdf
+arxiv: https://arxiv.org/abs/2112.15236
 code: https://github.com/Amir-19/prediction-pillar
 ---
 We propose two methods for learning the agent state online based on the generate-and-test approach.
